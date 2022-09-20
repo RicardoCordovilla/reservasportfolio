@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <title>Reservas Safaera</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="logos/isotipo_safaera.png" type="image/x-icon">
+    <!-- <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script> -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+
+<body>
+
+
+
+    <header>
+        <figure class="figura" id="logohead">
+            <img src="logos/safaera_logo.png" alt="" class="logo">
+        </figure>
+    </header>
+
+    <article class="hidebx" id="mainconfimacion">
+        <figure class="seccion_confirmacion">
+
+            <img src="assets/confirmacion.jpeg" alt="" class="img_confirmacion">
+        </figure>
+    </article>
+    <main class="" id="mainpage">
+
+
+        <!-- <a href="confirmacion.html">confirmacion</a> -->
+
+
+        <h1>la mejor discoteca de Quito safaera</h1>
+        <section class="carrusel image-styled" id="fadingImage">
+            <!-- <img id="foto1" class="fotos " src="images/personas_bailando_safaera.jpg" alt="personas bailando en discoteca safaera"> -->
+
+        </section>
+
+        <section class="descripcion parallax">
+            <p>Vive la mejor experiencia de entretenimiento en Quito</p>
+            <p>Av. República y Mañosca, Plaza Mayor</p>
+            <p><strong>SEGUNDO PISO</strong></p>
+        </section>
+
+
+
+
+
+
+
+        <!-- *************** RESERVAS  ***************** -->
+        <section class="reservas">
+
+            <!-- <form class="form" name="reserva" method="post" data-netlify="true"> -->
+            <!-- <form class="form" action="https://formspree.io/f/mqknopbg" method="POST"> -->
+
+
+            <form class="form" name="Reservas" id="formulario">
+                <div class="title">Reserva</div>
+
+                <div class="input-container ic1">
+                    <input id="firstname" class="input" type="text" placeholder=" " name="Nombre" required minlength="5""/>
+                    <div class=" cut">
+                </div>
+                <label for="firstname" class="placeholder">Nombre</label>
+                </div>
+
+
+
+
+                <div class="input-container ic2">
+                    <input id="cedula" class="input" type="tel" placeholder=" " name="Cedula" required
+                        pattern="[0-9]{10}" />
+                    <div class="cut"></div>
+                    <label for="cedula" class="placeholder">Cédula</label>
+                </div>
+
+
+
+                <div class="section_cumple">
+                    <h4>¿Hay algún cumpleañero?</h4>
+                    <input type="checkbox" id="cumple" class="hidebx" name="Cumple" />
+                    <label for="cumple" class="lbl-check">
+                        <div class="display-box">
+                            <span class="tiempo">SI</span>
+                        </div>
+                    </label>
+                </div>
+
+
+
+                <div class="input-container ic2">
+                    <input id="celular" class="input" type="tel" placeholder=" " name="Celular" required
+                        pattern="[0-9]{10}" />
+                    <div class="cut cut-short"></div>
+                    <label for="celular" class="placeholder">Celular</label>
+                </div>
+
+                <div class="input-container ic2">
+                    <input id="personas" class="input" type="number" placeholder=" " name="Personas" required
+                        value="2" />
+                    <div class="cut cut-short"></div>
+                    <label for="personas" class="placeholder">¿Cuántas personas vienen?</label>
+                </div>
+
+                <!-- ****** FECHA  *********** -->
+                <div class="input-container ic2">
+                    <input id="fecha" class="input" type="date" placeholder=" " name="Fecha" required />
+                    <div class="cut cut-short"></div>
+                    <label for="fecha" class="placeholder">Agenda</label>
+                </div>
+
+                <!-- ************************* -->
+                <!-- ****** HORAS  *********** -->
+
+
+
+                <h4>Hora</h4>
+                <div class="container">
+
+
+                    <!-- 7:00 -->
+                    <!-- <input type="radio" name="hora" id="hora1" class="hidebx" value="7:00" checked />
+                    <label for="hora1" class="lbl-radio">
+                        <div class="display-box">
+                            <span class="tiempo">19:00</span>
+                        </div>
+                    </label> -->
+
+                    <!-- 7:30 -->
+                    <!-- <input type="radio" name="hora" id="hora2" class="hidebx" value="7:30" />
+                    <label for="hora2" class="lbl-radio">
+                        <div class="display-box">
+                            <span class="tiempo">19:30</span>
+                        </div>
+                    </label> -->
+
+                    <!-- 8:00 -->
+                    <!-- <input type="radio" name="hora" id="hora3" class="hidebx" value="8:00" />
+                    <label for="hora3" class="lbl-radio">
+                        <div class="display-box">
+                            <span class="tiempo">20:00</span>
+                        </div>
+                    </label> -->
+
+                    <!-- 8:30 -->
+                    <input type="radio" name="hora" id="hora4" class="hidebx" value="8:30" checked />
+                    <label for="hora4" class="lbl-radio">
+                        <div class="display-box">
+                            <span class="tiempo">20:30</span>
+                        </div>
+                    </label>
+
+
+                    <!-- 9:00 -->
+                    <input type="radio" name="hora" id="hora5" class="hidebx" value="9:00" />
+                    <label for="hora5" class="lbl-radio">
+                        <div class="display-box">
+                            <span class="tiempo">21:00</span>
+                        </div>
+                    </label>
+
+
+                    <!-- 9:30 -->
+                    <input type="radio" name="hora" id="hora6" class="hidebx" value="9:30" />
+                    <label for="hora6" class="lbl-radio">
+                        <div class="display-box">
+                            <span class="tiempo">21:30</span>
+                        </div>
+                    </label>
+
+                    <!-- 10:00 -->
+                    <input type="radio" name="hora" id="hora7" class="hidebx" value="10:00" />
+                    <label for="hora7" class="lbl-radio">
+                        <div class="display-box">
+                            <span class="tiempo">22:00</span>
+                        </div>
+                    </label>
+
+                    <!-- 10:30 -->
+                    <input type="radio" name="hora" id="hora8" class="hidebx" value="10:30" />
+                    <label for="hora8" class="lbl-radio">
+                        <div class="display-box">
+                            <span class="tiempo">22:30</span>
+                        </div>
+                    </label>
+
+                    <!-- 11:00 -->
+                    <input type="radio" name="hora" id="hora9" class="hidebx" value="11:00" />
+                    <label for="hora9" class="lbl-radio">
+                        <div class="display-box">
+                            <span class="tiempo">23:00</span>
+                        </div>
+                    </label>
+
+                    <!-- 11:30 -->
+                    <input type="radio" name="hora" id="hora10" class="hidebx" value="11:30" />
+                    <label for="hora10" class="lbl-radio">
+                        <div class="display-box">
+                            <span class="tiempo">23:30</span>
+                        </div>
+                    </label>
+
+
+
+
+                </div>
+
+
+
+                <!-- *************************** -->
+
+                <div class="input-container ic1">
+                    <!-- <textarea name="Observaciones" id="coments" cols="30" rows="4" class="input"></textarea> -->
+                    <input id="coments" class="input" type="text" placeholder=" " name="Observaciones" />
+                    <div class="cut"></div>
+                    <label for="coments" class="placeholder">Observaciones adicionales
+
+                    </label>
+                </div>
+
+                <!-- <button type="button" class="submit" id="btn_tiket">Generear Tiket</button> -->
+                <button type="submit" class="btnTiket" id="btnTiket">Generar ticket</button>
+
+
+            </form>
+
+
+        </section>
+        <!-- *********************************************** -->
+
+
+        <section class="tiketBx hideTiket" id="tiketBx">
+            <div class="tiketBody">
+                <span class="closeTiket" id="closeTiket">X</span>
+                <div class="tiket" id="tiket">
+
+                    <figure>
+                        <img src="logos/safaera_logo.png" alt="">
+                    </figure>
+                    <h3>Confirmacion de reserva</h3>
+
+                    <table>
+                        <tr>
+                            <th>Nombre:</th>
+                            <th id="tableName"></th>
+                        </tr>
+                        <tr>
+                            <th>Cédula:</th>
+                            <th id="tableCi"></th>
+                        </tr>
+                        <tr>
+                            <th>Celular:</th>
+                            <th id="tableCel"></th>
+                        </tr>
+                        <tr>
+                            <th>Personas:</th>
+                            <th id="tablePerson"></th>
+                        </tr>
+                        <tr>
+                            <th>Día:</th>
+                            <th id="tableDia"></th>
+                        </tr>
+                        <tr>
+                            <th>Fecha:</th>
+                            <th id="tableFecha"></th>
+                        </tr>
+                        <tr>
+                            <th>Hora:</th>
+                            <th id="tableHora"></th>
+                        </tr>
+                        <tr>
+                            <th>Observaciones</th>
+                            <th id="tableComents"></th>
+                        </tr>
+
+                    </table>
+                    <div class="tiket__condiciones">
+                        <ul>
+                            <li>El servicio de mesa es para el consumo permanente de botellas.</li>
+                            <li>Estricto derecho de admisión</li>
+                            <li>Una vez cumplido el aforo, SAFAERA se reserva el derecho de admision.
+                                Recuerda cumplir con la hora de tu reserva.
+                            </li>
+                            <li>Tiempo estimado de espera para ingresar: 20 minutos</li>
+                            <li>Dress code: Semi formal, prohibido prendas deportivas (Camisetas, sudaderas, gorras,
+                                prendas
+                                rotas, etc.)</li>
+                            <li>Open door 20h30</li>
+                            <li>Aforo limitado</li>
+                            <li>Cumplir con la hora de llegada definida en la reserva(+/- 15min</li>
+                            <li>Presentación ID (cédula de identidad, licencia de conducir, pasaporte) + carnet de
+                                vacunación
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="btnsTiket">
+                    <button type="button" class="btnSave" id="btn_saveTiket" onclick="generarTicket()">Guardar
+                        ticket</button>
+                    <button type="button" class="submit" id="btn_enviar">Reservar</button>
+                </div>
+                <hr>
+
+                <footer>
+                    <h5 style="color: #333; margin-bottom: -1.7rem; text-align: center;">¿Necesitas una página web?</h5>
+                    <br>
+                    &copy; Desarrollado por: <a href="https://rundevweb.netlify.app/" target="_blank" rel="noreferrer">
+                        | rundev-web |</a>
+                </footer>
+
+
+            </div>
+
+        </section>
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"
+            integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous">
+            </script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.1/dist/html2canvas.min.js"></script>
+
+        <script>
+
+            const form = document.getElementById('formulario')
+
+
+            const tableName = document.getElementById('tableName')
+            const tableCi = document.getElementById('tableCi')
+            const tableCel = document.getElementById('tableCel')
+            const tablePerson = document.getElementById('tablePerson')
+            const tableDia = document.getElementById('tableDia')
+            const tableFecha = document.getElementById('tableFecha')
+            const tableHora = document.getElementById('tableHora')
+            const tableComents = document.getElementById('tableComents')
+            const btn_submit = document.getElementById('btn_enviar')
+            const tiketBx = document.getElementById('tiketBx')
+            const closeTiket = document.getElementById('closeTiket')
+
+            closeTiket.addEventListener('click', () => {
+                tiketBx.classList.add('hideTiket')
+            })
+
+
+
+            const weekday = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"];
+            const getDay = (dateString) => {
+                const date = new Date(dateString);
+                day = weekday[date.getDay()];
+                return day
+            }
+            const getDateCurrent = () => {
+                let date = new Date().toJSON().slice(0, 10)
+                return date
+            }
+            const getDateAvailable = (dateString = "") => {
+                if (dateString) {
+                    /* Lo que es ubicar la fecha a la mas reciente y no antes, pues no hay eventos apartar en el pasado */
+                    let date = new Date(dateString)
+                    if (date.getTime() > new Date().getTime())
+                        dateString = date.toJSON().slice(0, 10)
+                    else
+                        dateString = new Date().toJSON().slice(0, 10)
+                } else {
+                    let date = new Date()
+                    dateString = date.toJSON().slice(0, 10)
+                }
+                let date = dateString ? new Date(dateString) : new Date();
+                let day = date.getDay();
+                let addDays = 0
+                switch (+day) {
+                    case 6: /* 'Domingo' */
+                        addDays = 4
+                        break;
+                    case 0: /* 'Lunes' */
+                        addDays = 3
+                        break;
+                    case 1: /* 'Martes' */
+                        addDays = 2
+                        break;
+                    case 2: /* 'Miercoles' */
+                        addDays = 1
+                        break;
+                    default:
+                        break;
+                }
+                date.setDate(date.getDate() + addDays)
+                return date.toJSON().slice(0, 10)
+            }
+            const newForm = (name) => {
+                let form = document.createElement('form')
+                form.name = name
+                return form
+            }
+            const newInput = (name, value) => {
+                const input = document.createElement('input')
+                input.name = name
+                input.value = value
+                return input
+            }
+            const appendForm = (formSend, props) => {
+                // console.log('Agregar a ');
+                Object.keys(props).forEach(prop => {
+                    const input = props[prop]
+                    // console.log({ n: prop, v: input.value });
+                    formSend.append(newInput(prop, input.value))
+                })
+                return formSend
+            }
+
+
+
+
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbznmfNMuCDQ-ZeMcDEh9BSdHe6xpIIqvO9Px7I7eeuU4KK8uT_eYcIODbal9j6O37-o/exec'
+            // const form = document.forms['Reservas']
+            form.Fecha.value = getDateAvailable()
+
+
+            form.addEventListener('change', () => {
+                tableName.innerHTML = form.Nombre.value
+                tableCi.innerHTML = form.Cedula.value
+                tableCel.innerHTML = newInput('Cumple', 'NO')
+                tableCel.innerHTML = form.Celular.value
+                tablePerson.innerHTML = form.Personas.value
+                tableDia.innerHTML = newInput('Dia', getDay(form.Fecha.value)).value
+                tableFecha.innerHTML = form.Fecha.value
+                tableHora.innerHTML = form.hora.value
+                tableComents.innerHTML = form.Observaciones.value
+            })
+
+            form.Fecha.addEventListener('change', (e) => {
+                if (e.target == form.Cumple) {
+
+                } else if (e.target == form.Fecha) {
+                    switch (getDay(form.Fecha.value)) {
+                        case 'Jueves':
+                        case 'Viernes':
+                        case 'Sabado':
+                            break;
+                        default:
+                            form.fecha.value = getDateAvailable(form.fecha.value)
+                            alert('Solo dias Jueves, Viernes y Sabado ')
+                            return;
+                    }
+                }
+            })
+            let formSend
+
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                formSend = appendForm(
+                    newForm(name = "Reservas"),
+                    {
+                        Nombre: form.Nombre,
+                        Cedula: form.Cedula,
+                        Cumple: newInput('Cumple', 'NO'),
+                        Celular: form.Celular,
+                        Personas: form.Personas,
+                        Dia: newInput('Dia', getDay(form.Fecha.value)),
+                        Fecha: form.Fecha,
+                        hora: form.hora,
+                        Observaciones: form.Observaciones
+                    }
+                )
+
+                formSend.Cumple.value = form.Cumple.checked ? 'SI' : 'NO'
+
+                tiketBx.classList.remove('hideTiket')
+
+                location.href = '#tiketBx'
+            })
+
+            btn_submit.addEventListener('click', () => {
+                btn_enviar.innerHTML = '🕒Registrando...'
+                btn_enviar.disabled =true
+
+                fetch(scriptURL, { method: 'POST', body: new FormData(formSend) })
+                    .then(response => {
+
+                        setTimeout(() => {
+                            const header = document.getElementById('logohead')
+                            const pagea = document.getElementById('mainpage')
+                            const pageb = document.getElementById('mainconfimacion')
+                            header.classList.toggle('hidebx')
+                            pageb.classList.toggle('hidebx')
+                            pagea.classList.toggle('hidebx')
+                            form.btn_enviar.innerHTML = 'Gracias ✅'
+
+<<<<<<< HEAD
+                        }, 1000)
+=======
+                        }, 500)
+>>>>>>> 0fcda86a04234240e34600f488ced45293bbe742
+
+                    })
+
+            })
+
+
+
+
+
+
+            const generarTicket = () => {
+                html2canvas(document.getElementById('tiket')) // Llamar a html2canvas y pasarle el elemento
+                    .then(canvas => {
+                        // Cuando se resuelva la promesa traerá el canvas
+                        // Crear un elemento <a>
+                        let enlace = document.createElement('a');
+                        // enlace.download = "tiketSafaera.png";
+                        enlace.download = `Ticket_${form.Nombre.value}-${form.fecha.value}`;
+                        // Convertir la imagen a Base64
+                        enlace.href = canvas.toDataURL();
+                        // Hacer click en él
+                        enlace.click();
+                        // document.getElementById('tiket').classList.toggle('hidebx')
+                    })
+            }
+
+            function fillInfo() {
+                form.Nombre.value = "Ricardo Testing"
+                form.Cedula.value = 1724258056
+                // form.Cumple.checked = 
+                form.Celular.value = '0961777009'
+                // form.Personas.value = 
+                // form.hora.value = "11:00"
+            }
+
+            // fillInfo()
+
+
+        </script>
+
+        <section class="redes">
+            <a href="https://www.instagram.com/safaerauio/" rel="noreferrer"><i class='bx bxl-instagram'></i></a>
+            <!-- <a href="tel:0987452534"><i class='bx bx-phone-call'></i></a> -->
+        </section>
+        <footer>
+            &copy; Desarrollado por: <a href="https://rundevweb.netlify.app/" target="_blank" rel="noreferrer"> |
+                rundev-web |</a>
+            <!-- &copy; <a href="https://github.com/hzvvictor">Victor Vargas </a> -->
+        </footer>
+    </main>
+    </main>
+    <script src="assets/js/transiciones.js"></script>
+
+
+
+</body>
+
+</html>
