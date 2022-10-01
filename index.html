@@ -343,7 +343,7 @@
             let agent = navigator.userAgent;
             agent = agent.toLowerCase()
             console.log(agent, typeof agent)
-            if (agent.indexOf('instagram')) {
+            if (agent.indexOf('instagram')>-1) {
 
                 document.getElementById("formulario").innerHTML = `
                 <h3>Copia el enlace y abrelo en otro navegador por favor</h3>
