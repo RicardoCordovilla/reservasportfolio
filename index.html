@@ -343,13 +343,15 @@
             let agent = navigator.userAgent;
             agent = agent.toLowerCase()
             console.log(agent, typeof agent)
-            if (agent.indexOf('instagram') > -1) {
+            if (agent.indexOf('instagram')) {
 
                 document.getElementById("formulario").innerHTML = `
                 <h3>Copia el enlace y abrelo en otro navegador por favor</h3>
                 <input type="text" value="https://safaerauio.com" class="copylink" id="copylink">
                 
                 `
+                document.getElementById('copylink').focus()
+
                 document.getElementById('copylink').select()
             }
 
