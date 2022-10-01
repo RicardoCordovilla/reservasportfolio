@@ -600,3 +600,8 @@ input[type="checkbox"]:checked+.lbl-check {
     height: 0;
     transition: all 200ms ease;
 }
+
+
+.copylink{
+    font-size: 3rem;
+}
