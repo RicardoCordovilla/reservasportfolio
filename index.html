@@ -341,7 +341,12 @@
         <script>
 
             let agent = navigator.userAgent;
-            document.getElementById("formulario").innerHTML = "User-agent:<br>" + agent;
+            agent.toLowerCase()
+            if (agent.includes('instagram'))
+                document.getElementById("formulario").innerHTML = "User-agent:<br>" + agent;
+
+
+                
             const form = document.getElementById('formulario')
 
 
