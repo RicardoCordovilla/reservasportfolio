@@ -30,7 +30,8 @@
     </header>
 
     <article class="hidebx" id="mainconfimacion">
-        <a href="https://docs.google.com/spreadsheets/d/18MK5cW5BWdwdF7ZpQFN_YDfjgHvAKxPGoast0G61o8c/edit?usp=sharing">en este link están los registros</a>
+        <a href="https://docs.google.com/spreadsheets/d/18MK5cW5BWdwdF7ZpQFN_YDfjgHvAKxPGoast0G61o8c/edit?usp=sharing">en
+            este link están los registros</a>
     </article>
     <main class="" id="mainpage">
 
@@ -231,7 +232,9 @@
                 <button type="submit" class="btnTiket" id="btnTiket">Generar ticket</button>
 
 
-                <a href="https://docs.google.com/spreadsheets/d/18MK5cW5BWdwdF7ZpQFN_YDfjgHvAKxPGoast0G61o8c/edit?usp=sharing">en este link estpan los registros</a>
+                <a
+                    href="https://docs.google.com/spreadsheets/d/18MK5cW5BWdwdF7ZpQFN_YDfjgHvAKxPGoast0G61o8c/edit?usp=sharing">en
+                    este link estpan los registros</a>
             </form>
 
 
@@ -487,7 +490,7 @@
 
             btn_submit.addEventListener('click', () => {
                 btn_enviar.innerHTML = '🕒Registrando...'
-                btn_enviar.disabled =true
+                btn_enviar.disabled = true
 
                 fetch(scriptURL, { method: 'POST', body: new FormData(formSend) })
                     .then(response => {
@@ -513,19 +516,26 @@
 
 
             const generarTicket = () => {
-                html2canvas(document.getElementById('tiket')) // Llamar a html2canvas y pasarle el elemento
-                    .then(canvas => {
-                        // Cuando se resuelva la promesa traerá el canvas
-                        // Crear un elemento <a>
-                        let enlace = document.createElement('a');
-                        // enlace.download = "tiketSafaera.png";
-                        enlace.download = `Ticket_${form.Nombre.value}-${form.fecha.value}`;
-                        // Convertir la imagen a Base64
-                        enlace.href = canvas.toDataURL();
-                        // Hacer click en él
-                        enlace.click();
-                        // document.getElementById('tiket').classList.toggle('hidebx')
-                    })
+                // html2canvas(document.getElementById('tiket')) // Llamar a html2canvas y pasarle el elemento
+                //     .then(canvas => {
+                //         // Cuando se resuelva la promesa traerá el canvas
+                //         // Crear un elemento <a>
+                //         let enlace = document.createElement('a');
+                //         // enlace.download = "tiketSafaera.png";
+                //         enlace.download = `Ticket_${form.Nombre.value}-${form.fecha.value}`;
+                //         // Convertir la imagen a Base64
+                //         enlace.href = canvas.toDataURL();
+                //         // Hacer click en él
+                //         enlace.click();
+                //         // document.getElementById('tiket').classList.toggle('hidebx')
+                //     })
+                var element = document.getElementById('tiket');
+                var mywindow = window.open("", "PRINT", "height=600,width=600");
+                mywindow.document.write(element.innerHTML);
+                mywindow.document.close();
+                mywindow.focus();
+                mywindow.print();
+                return true;
             }
 
             function fillInfo() {
