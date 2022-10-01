@@ -350,10 +350,15 @@
                 <input type="text" value="https://safaerauio.com" class="copylink" id="copylink">
                 
                 `
-                document.getElementById('copylink').focus()
-
-                document.getElementById('copylink').select()
             }
+            const copylink=document.getElementById('copylink')
+
+            copylink.addEventListener('click',()=>{
+                copylink.select()
+            })
+            
+
+
 
 
             const form = document.getElementById('formulario')
