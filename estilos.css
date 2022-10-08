@@ -175,10 +175,13 @@ body {
 }
 
 .tiket figure {
-    background-color: #15172b;
+    /* background-color: #15172b; */
+    width: 25%;
+    align-self: center;
 }
 
 .tiket figure img {
+    align-self: center;
     width: 100%;
 }
 

@@ -30,8 +30,10 @@
     </header>
 
     <article class="hidebx" id="mainconfimacion">
-        <a href="https://docs.google.com/spreadsheets/d/18MK5cW5BWdwdF7ZpQFN_YDfjgHvAKxPGoast0G61o8c/edit?usp=sharing">en
-            este link están los registros</a>
+        <a href="https://docs.google.com/spreadsheets/d/18MK5cW5BWdwdF7ZpQFN_YDfjgHvAKxPGoast0G61o8c/edit?usp=sharing"
+        target="_blank"
+        >
+            en este link están los registros</a>
     </article>
     <main class="" id="mainpage">
 
@@ -39,16 +41,15 @@
         <!-- <a href="confirmacion.html">confirmacion</a> -->
 
 
-        <h1>la mejor discoteca de Quito safaera</h1>
+        <h1>Plataforma de reservas</h1>
         <section class="carrusel image-styled" id="fadingImage">
             <!-- <img id="foto1" class="fotos " src="images/personas_bailando_safaera.jpg" alt="personas bailando en discoteca safaera"> -->
 
         </section>
 
         <section class="descripcion parallax">
-            <p>Vive la mejor experiencia de entretenimiento en Quito</p>
-            <p>Av. República y Mañosca, Plaza Mayor</p>
-            <p><strong>SEGUNDO PISO</strong></p>
+            <p>Plataforma para reservas</p>
+            <p>A continuación se muestra un formulario de ejemplo</p>
         </section>
 
 
@@ -271,8 +272,9 @@
 
 
                 <a
-                    href="https://docs.google.com/spreadsheets/d/18MK5cW5BWdwdF7ZpQFN_YDfjgHvAKxPGoast0G61o8c/edit?usp=sharing">en
-                    este link estpan los registros</a>
+                    href="https://docs.google.com/spreadsheets/d/18MK5cW5BWdwdF7ZpQFN_YDfjgHvAKxPGoast0G61o8c/edit?usp=sharing"
+                    target="_blank">
+                    en este link están los registros</a>
             </form>
 
 
@@ -323,6 +325,10 @@
                         <tr>
                             <th>Observaciones</th>
                             <th id="tableComents"></th>
+                        </tr>
+                        <tr>
+                            <th>Area de fumadores</th>
+                            <th id="tableArea"></th>
                         </tr>
 
                     </table>
@@ -418,6 +424,8 @@
             const tableFecha = document.getElementById('tableFecha')
             const tableHora = document.getElementById('tableHora')
             const tableComents = document.getElementById('tableComents')
+            const tableArea = document.getElementById('tableArea')
+
             const btn_submit = document.getElementById('btn_enviar')
             const tiketBx = document.getElementById('tiketBx')
             const closeTiket = document.getElementById('closeTiket')
@@ -513,6 +521,7 @@
                 tableFecha.innerHTML = form.Fecha.value
                 tableHora.innerHTML = form.hora.value
                 tableComents.innerHTML = form.Observaciones.value
+                tableArea.innerHTML = form.Fumadores.checked ? 'SI' : 'NO'
             })
 
             form.Fecha.addEventListener('change', (e) => {
